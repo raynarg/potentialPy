@@ -1,0 +1,76 @@
+Machete:
+    En python hay tipos de datos primitivos y colecciones
+    Diferencia mutable e inmutable, ejemplo con int:
+        Si hacemos
+            x = 5
+            x = x + 1
+            No estamos modificando <x> sino que estamos haciendo que <x> apunte a otro objeto nuevo (x+1=6)
+            PERO! 5 sigue existiendo (NO MUTA)
+
+    Primitivos:
+        numeros (float, int, complex)
+        strings (str)
+        booleanos (bool)
+    Colecciones
+        Mutables
+            listas (list)
+            diccionarios (dict) / clave:valor
+            conjuntos (set) / sin duplicados
+        No-Mutables
+            tuplas (tuple)
+Para verificare el tipo de dato de una variable utilzamos type()
+    - ej. Devuelve si pertenece a la clase 'int''float', etc.
+
+        
+
+🔁 Ejercicio 1: Calculadora simple
+Pedí dos números y una operación (+, -, *, /) al usuario.
+Mostrá el resultado según la operación elegida.
+
+Validá que no se divida por cero.
+
+📆 Ejercicio 2: Año bisiesto
+Pedí un año al usuario y determiná si es bisiesto.
+
+Es bisiesto si:
+(año % 4 == 0 and año % 100 != 0) or (año % 400 == 0)
+
+🔠 Ejercicio 3: Mayúscula o minúscula
+Pedí una letra e indicá si es mayúscula, minúscula, o si no es una letra.
+
+🎰 Ejercicio 4: Última cifra
+Pedí un número entero y mostrá su última cifra (por ejemplo, de 123, debe mostrar 3).
+
+📊 Ejercicio 5: Clasificación de edades
+Pedí una edad e imprimí en qué categoría está:
+
+0-12: Niño
+
+13-17: Adolescente
+
+18-64: Adulto
+
+65+: Adulto mayor
+
+🔄 Ejercicio 6: Número invertido (3 cifras)
+Pedí un número de 3 cifras y mostrálo al revés.
+
+Por ejemplo, si el usuario escribe 321, el programa debe imprimir 123.
+
+🧮 Ejercicio 7: Evaluador de expresión
+Pedí al usuario que ingrese una expresión matemática simple como texto ("5 + 3"), y evaluála con eval() para mostrar el resultado.
+
+¡Explicá por qué eval() debe usarse con cuidado! 🔐
+
+🎤 Ejercicio 8: Detectar vocales en texto
+Pedí un texto corto e imprimí cuántas vocales tiene.
+
+Pista: usá in y lower().
+
+🔡 Ejercicio 9: Palabra al revés
+Pedí una palabra e imprimila al revés (sin usar [::-1], hacerlo con lógica paso a paso).
+
+🎯 Ejercicio 10: Últimos dos dígitos del DNI
+Pedí al usuario su número de DNI y mostrá los últimos dos dígitos.
+
+Asegurate de que el valor ingresado sea un número y tenga al menos dos dígitos.
