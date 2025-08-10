@@ -15,19 +15,19 @@ Salida esperada:
 6 → 9.5 (*)
 Total con nota destacada: 3"""
 
-def alumnos_destacados(calificaciones: list) -> str:
-    line = []
+def alumnos_destacados(calificaciones: list[float]) -> str:
+    lineas = []
     cant_alumnos_destacados = 0
     for i, v in enumerate (calificaciones, start=1):
         if v >= 9:
-            line.append(f"{i} -> {v} (*)")
+            lineas.append(f"{i} -> {v} (*)")
             cant_alumnos_destacados += 1
         else:
-            line.append(f"{i} -> {v}")
+            lineas.append(f"{i} -> {v}")
     
-    #podemos usar .join(line) porque es una lista de strings. Lo que hace join
-    #es unir todos elementos de line es 1 solo string.
-    resultado = "\n".join(line)
+    #podemos usar .join(lineas) porque es una lista de strings. Lo que hace join
+    #es unir todos elementos de lineas es 1 solo string.
+    resultado = "\n".join(lineas)
     resultado += f"\n Total alumnos con nota destacada {cant_alumnos_destacados}"
     return resultado
 
