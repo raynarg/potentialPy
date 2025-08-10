@@ -13,7 +13,7 @@ def pedir_dni()->int:
         except ValueError as e:
             print(f"Error: {e}. Por favor, ingrese un número de DNI válido.")
 
-def ultimos_digitos(dni: int)->int: #type:ignore 
+def ultimos_digitos(dni: int)->int: 
     return dni % 100
 
 dni = pedir_dni()

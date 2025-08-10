@@ -5,8 +5,7 @@ Cuando comience a estudiar backend, crearé un nuevo entorno virtual específico
 
 ## Organización del proyecto
 mi-repaso-python/
-├── apuntes/ # Notas en Markdown sobre Python básico, POO e intermedio
-├── ejercicios/ # Scripts Python para practicar los conceptos vistos
+├── python_breaking_ice/ # Scripts Python para repasar/realizar ejercicios simples y recordar el uso basico de python
 ├── env/ # Entorno virtual para este repaso del lenguaje
 ├── README.md # Esta documentación
 ├── requirements.txt # Dependencias (vacío o con librerías básicas)
